@@ -39,3 +39,21 @@ SELECT COUNT(booking_id) AS total_bookings FROM Payments WHERE payment_method = 
 
 -- Query: Get the total number of bookings for a specific service
 SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE booking_id IN (SELECT booking_id FROM Payments WHERE payment_method = 'Credit Card');
+
+-- Query: Get the total number of bookings for a specific guest
+SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE guest_id = 4;
+
+-- Query: Get the total number of bookings for a specific room
+SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE room_id = 5;
+
+-- Query: Get the total number of bookings for a specific payment method
+SELECT COUNT(booking_id) AS total_bookings FROM Payments WHERE payment_method = 'Cash';
+
+-- Query: Get the total number of bookings for a specific service
+SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE booking_id IN (SELECT booking_id FROM Payments WHERE payment_method = 'Cash');
+
+-- Query: Get the total number of bookings for a specific guest
+SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE guest_id = 2;
+
+-- Query: Get the total number of bookings for a specific room
+SELECT COUNT(booking_id) AS total_bookings FROM Bookings WHERE room_id = 3;
