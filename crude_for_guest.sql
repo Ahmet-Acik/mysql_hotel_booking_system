@@ -107,3 +107,4 @@ WHERE service_id = (SELECT service_id FROM Services ORDER BY service_id LIMIT 1)
 -- Delete: Delete a service by name to avoid ID-specific deletions
 DELETE FROM Services 
 WHERE name = (SELECT name FROM Services ORDER BY service_id LIMIT 1);
+

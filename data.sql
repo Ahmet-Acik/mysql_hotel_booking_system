@@ -73,3 +73,5 @@ INSERT INTO Services (name, description, price) VALUES
 ('Pet Care', 'Care for pets during the stay', 50.00),
 ('Wi-Fi', 'High-speed internet access', 10.00),
 ('Mini Bar', 'In-room mini bar with snacks', 40.00);
+
+-- Insert sample data into Services table
